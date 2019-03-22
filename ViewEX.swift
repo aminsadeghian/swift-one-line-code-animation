@@ -221,16 +221,16 @@ extension UIView {
         set{layer.cornerRadius = newValue}
     }
     var position: CGPoint{
-        get{return layer.position}
-        set{layer.position = newValue}
+        get{return frame.origin}
+        set{frame.origin = newValue}
     }
     var x: CGFloat{
-        get{return layer.position.x}
-        set{layer.position.x = newValue}
+        get{return frame.origin.x}
+        set{frame.origin.x = newValue}
     }
     var y: CGFloat{
-        get{return layer.position.y}
-        set{layer.position.y = newValue}
+        get{return frame.origin.y}
+        set{frame.origin.y = newValue}
     }
     var z: CGFloat{
         get{return layer.zPosition}
@@ -241,12 +241,12 @@ extension UIView {
         set{layer.frame.size = newValue}
     }
     var width: CGFloat{
-        get{return bounds.size.width}
-        set{bounds.size.width = newValue}
+        get{return frame.size.width}
+        set{frame.size.width = newValue}
     }
     var height: CGFloat{
-        get{return bounds.size.height}
-        set{bounds.size.height = newValue}
+        get{return frame.size.height}
+        set{frame.size.height = newValue}
     }
     var anchorPoint: CGPoint{
         get{return layer.anchorPoint}
