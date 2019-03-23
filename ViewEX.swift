@@ -184,78 +184,23 @@ extension UIView {
     }
 
     // faster get & set essential properties
-    var opacity: CGFloat{
-        get{return alpha}
-        set{alpha = newValue}
-    }
-    var shadowColor: CGColor{
-        get{return layer.shadowColor!}
-        set{layer.shadowColor = newValue}
-    }
-    var shadowRadius: CGFloat{
-        get{return layer.shadowRadius}
-        set{layer.shadowRadius = newValue}
-    }
-    var shadowOpacity: Float{
-        get{return layer.shadowOpacity}
-        set{layer.shadowOpacity = newValue}
-    }
-    var shadowOffset: CGSize{
-        get{return layer.shadowOffset}
-        set{layer.shadowOffset = newValue}
-    }
-    var shadowPath: CGPath{
-        get{return layer.shadowPath!}
-        set{layer.shadowPath = newValue}
-    }
-    var borderWidth: CGFloat{
-        get{return layer.borderWidth}
-        set{layer.borderWidth = newValue}
-    }
-    var borderColor: CGColor{
-        get{return layer.borderColor!}
-        set{layer.borderColor = newValue}
-    }
-    var cornerRadius: CGFloat{
-        get{return layer.cornerRadius}
-        set{layer.cornerRadius = newValue}
-    }
-    var position: CGPoint{
-        get{return frame.origin}
-        set{frame.origin = newValue}
-    }
-    var x: CGFloat{
-        get{return frame.origin.x}
-        set{frame.origin.x = newValue}
-    }
-    var y: CGFloat{
-        get{return frame.origin.y}
-        set{frame.origin.y = newValue}
-    }
-    var z: CGFloat{
-        get{return layer.zPosition}
-        set{layer.zPosition = newValue}
-    }
-    var size: CGSize{
-        get{return layer.frame.size}
-        set{layer.frame.size = newValue}
-    }
-    var width: CGFloat{
-        get{return frame.size.width}
-        set{frame.size.width = newValue}
-    }
-    var height: CGFloat{
-        get{return frame.size.height}
-        set{frame.size.height = newValue}
-    }
-    var anchorPoint: CGPoint{
-        get{return layer.anchorPoint}
-        set{layer.anchorPoint = newValue}
-    }
-    var transform3D: CATransform3D{
-        get{return layer.transform}
-        set{layer.transform = newValue}
-    }
+    var opacity: CGFloat{get{return alpha}set{alpha = newValue}}
+    var shadowColor: CGColor{get{return layer.shadowColor!}set{layer.shadowColor = newValue}}
+    var shadowRadius: CGFloat{get{return layer.shadowRadius}set{layer.shadowRadius = newValue}}
+    var shadowOpacity: Float{get{return layer.shadowOpacity}set{layer.shadowOpacity = newValue}}
+    var shadowOffset: CGSize{get{return layer.shadowOffset}set{layer.shadowOffset = newValue} }
+    var shadowPath: CGPath{get{return layer.shadowPath!}set{layer.shadowPath = newValue}}
+    var borderWidth: CGFloat{get{return layer.borderWidth}set{layer.borderWidth = newValue}}
+    var borderColor: CGColor{get{return layer.borderColor!}set{layer.borderColor = newValue}}
+    var cornerRadius: CGFloat{get{return layer.cornerRadius}set{layer.cornerRadius = newValue}}
+    var position: CGPoint{get{return frame.origin}set{frame.origin = newValue}}
+    var x: CGFloat{get{return frame.origin.x}set{frame.origin.x = newValue}}
+    var y: CGFloat{get{return frame.origin.y}set{frame.origin.y = newValue}}
+    var z: CGFloat{get{return layer.zPosition}set{layer.zPosition = newValue}}
+    var anchorPoint: CGPoint{get{return layer.anchorPoint}set{layer.anchorPoint = newValue}}
+    var size: CGSize{get{return layer.frame.size}set{layer.frame.size = newValue}}
+    var width: CGFloat{get{return frame.size.width}set{frame.size.width = newValue}}
+    var height: CGFloat{get{return frame.size.height}set{frame.size.height = newValue}}
     
     // faster set border and shadow
     func border(color: UIColor, width: CGFloat){
