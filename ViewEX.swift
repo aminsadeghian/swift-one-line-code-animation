@@ -14,9 +14,9 @@ extension UIView {
     // view.move(x: 100, duration: 1, easingfunction: ViewEasing.easeOut05 , delay: 0)
     func move(x: CGFloat,
               duration: CFTimeInterval,
-              easingfunction : UITimingCurveProvider,
+              easingFunction : UITimingCurveProvider,
               delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.x = x
         }
@@ -36,9 +36,9 @@ extension UIView {
     
     func move(y: CGFloat,
               duration: CFTimeInterval,
-              easingfunction: UITimingCurveProvider,
+              easingFunction: UITimingCurveProvider,
               delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.y = y
         }
@@ -57,9 +57,9 @@ extension UIView {
     
     func move(to: CGPoint,
               duration: CFTimeInterval,
-              easingfunction: UITimingCurveProvider,
+              easingFunction: UITimingCurveProvider,
               delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.position = to
         }
@@ -78,9 +78,9 @@ extension UIView {
     
     func transform3D(to: CATransform3D,
                      duration: CFTimeInterval,
-                     easingfunction: UITimingCurveProvider,
+                     easingFunction: UITimingCurveProvider,
                      delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.transform3D = to
         }
@@ -99,9 +99,9 @@ extension UIView {
     
     func transform(to: CGAffineTransform,
                    duration: CFTimeInterval,
-                   easingfunction: UITimingCurveProvider,
+                   easingFunction: UITimingCurveProvider,
                    delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.transform = to
         }
@@ -120,9 +120,9 @@ extension UIView {
     
     func size(to: CGSize,
               duration: CFTimeInterval,
-              easingfunction: UITimingCurveProvider,
+              easingFunction: UITimingCurveProvider,
               delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.size = to
         }
@@ -141,9 +141,9 @@ extension UIView {
     
     func size(height: CGFloat,
               duration: CFTimeInterval,
-              easingfunction: UITimingCurveProvider,
+              easingFunction: UITimingCurveProvider,
               delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.height = height
         }
@@ -162,9 +162,9 @@ extension UIView {
     
     func size(width: CGFloat,
               duration: CFTimeInterval,
-              easingfunction: UITimingCurveProvider,
+              easingFunction: UITimingCurveProvider,
               delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.width = width
         }
@@ -183,9 +183,9 @@ extension UIView {
     
     func opacity(to: CGFloat,
                  duration: CFTimeInterval,
-                 easingfunction: UITimingCurveProvider,
+                 easingFunction: UITimingCurveProvider,
                  delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.alpha  = to
         }
@@ -194,9 +194,9 @@ extension UIView {
     
     func background(color: UIColor,
                     duration: CFTimeInterval,
-                    easingfunction: UITimingCurveProvider,
+                    easingFunction: UITimingCurveProvider,
                     delay: CFTimeInterval){
-        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingfunction)
+        let animation = UIViewPropertyAnimator(duration: duration, timingParameters: easingFunction)
         animation.addAnimations {
             self.backgroundColor  = color
         }
